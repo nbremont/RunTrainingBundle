@@ -1,0 +1,2 @@
+# RunTrainingBundle
+Generate running plan
