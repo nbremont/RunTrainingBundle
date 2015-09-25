@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="yaml.parser" class="Symfony\Component\Yaml\Parser"></service>
+        <service id="nb_run_training.manager.week_type" class="Nb\RunTrainingBundle\Manager\WeekTypeManager">
+            <argument>%nb_run_training.week%</argument>
+        </service>
+        <service id="nb_run_training.manager.session" class="Nb\RunTrainingBundle\Manager\SessionManager">
+            <argument>%nb_run_training.session%</argument>
+            <call method="setHydratorFactory">
+                <argument type="service" id="nb_run_training.hydrator_factory" />
+            </call>
+        </service>
+        <service id="nb_run_training.manager.training_type" class="Nb\RunTrainingBundle\Manager\TrainingTypeManager">
+            <argument>%nb_run_training.training%</argument>
+        </service>
+        <service id="nb_run_training.picker.session" class="Nb\RunTrainingBundle\Picker\SessionPicker">
+            <argument type="service" id="nb_run_training.manager.session" />
+        </service>
+        <service id="nb_run_training.provider.week" class="Nb\RunTrainingBundle\Provider\WeekProvider">
+            <argument type="service" id="nb_run_training.manager.week_type" />
+            <argument type="service" id="nb_run_training.picker.session" />
+        </service>
+        <service id="nb_run_training.builder.week" class="Nb\RunTrainingBundle\Builder\WeekBuilder">
+            <argument type="service" id="nb_run_training.provider.week" />
+        </service>
+        <service id="nb_run_training.builder.plan" class="Nb\RunTrainingBundle\Builder\PlanBuilder">
+            <argument type="service" id="nb_run_training.builder.week" />
+            <argument type="service" id="nb_run_training.manager.training_type" />
+        </service>
+    </services>
+</container>
+

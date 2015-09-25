@@ -1,0 +1,12 @@
+checks:
+    php:
+        code_rating: true
+        duplication: true
+build:
+  tests:
+    override:
+      -
+        command: 'bin/phpspec run --format=pretty -c phpspec.yml'
+        coverage:
+          file: 'coverage.clover'
+          format: 'php-clover'

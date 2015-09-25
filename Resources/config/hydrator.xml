@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <services>
+        <service id="nb_run_training.hydrator_factory" class="Nb\RunTrainingBundle\Hydrator\HydratorFactory"></service>
+        <service id="nb_run_training.hydrator.specific" class="Nb\RunTrainingBundle\Hydrator\SpecificSessionHydrator">
+            <tag name="nb_run_training.hydrator" alias="specific"/>
+        </service>
+        <service id="nb_run_training.hydrator.endurance" class="Nb\RunTrainingBundle\Hydrator\EnduranceSessionHydrator">
+            <tag name="nb_run_training.hydrator" alias="endurance"/>
+        </service>
+        <service id="nb_run_training.hydrator.long_training" class="Nb\RunTrainingBundle\Hydrator\LongSessionHydrator">
+            <tag name="nb_run_training.hydrator" alias="long_training"/>
+        </service>
+        <service id="nb_run_training.hydrator.split" class="Nb\RunTrainingBundle\Hydrator\SplitSessionHydrator">
+            <tag name="nb_run_training.hydrator" alias="split"/>
+        </service>
+    </services>
+</container>
+

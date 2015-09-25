@@ -1,0 +1,27 @@
+{
+    "name": "nb/run-training-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "keywords": ["run", "plan", "training", "training plan"],
+    "description": "Generator of run training plan Bundle",
+    "authors": [
+        {
+            "name": "Nicolas BREMONT",
+            "email": "bremont.nicolas@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "symfony/symfony": ">=2.4,<3.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "2.3.*",
+        "henrikbjorn/phpspec-code-coverage": "~1.0"
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {
+        "psr-4": { "Nb\\RunTrainingBundle\\": "" }
+    }
+}
