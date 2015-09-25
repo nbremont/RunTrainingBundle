@@ -1,0 +1,10 @@
+{
+    "week_2": ["endurance", "endurance"],
+    "week_3": ["endurance", "endurance", "long_training"],
+    "week_4": ["endurance", ["specific", "split"], "endurance", "long_training"],
+    "week_5": ["endurance", ["specific", "split"], "endurance", ["specific", "split"], "long_training"],
+    "week_6": ["endurance", ["specific", "split"], "endurance", ["specific", "split"], "endurance", "long_training"],
+    "week_7": ["endurance", ["specific", "split"], "endurance", ["specific", "split"], "endurance", "split", "long_training"],
+    "week_recovery" : ["endurance", "endurance", "long_training"],
+    "week_last": ["endurance", "endurance"]
+}

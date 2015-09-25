@@ -1,0 +1,32 @@
+{
+    "split": [
+        { "distance": 200, "repeat_split_bracket_start": 8, "repeat_split_bracket_end": 12, "repeat_session_start": 1, "repeat_session_end": 2, "split_recovery": 30, "session_recovery": 3, "vo2m": 105, "training_type": [10, 21, 42] },
+        { "distance": 300, "repeat_split_bracket_start": 10, "repeat_split_bracket_end": 12, "repeat_session_start": 1, "repeat_session_end": 1, "split_recovery": 50, "session_recovery": 3, "vo2m": 100, "training_type": [10, 21, 42] },
+        { "distance": 400, "repeat_split_bracket_start": 8, "repeat_split_bracket_end": 12, "repeat_session_start": 1, "repeat_session_end": 1, "split_recovery": 1.25, "session_recovery": 3, "vo2m": 95, "training_type": [10, 21, 42] },
+        { "distance": 500, "repeat_split_bracket_start": 8, "repeat_split_bracket_end": 12, "repeat_session_start": 1, "repeat_session_end": 1, "split_recovery": 1.3, "session_recovery": 3, "vo2m": 95, "training_type": [10, 21, 42] },
+        { "distance": 600, "repeat_split_bracket_start": 8, "repeat_split_bracket_end": 10, "repeat_session_start": 1, "repeat_session_end": 1, "split_recovery": 1.5, "session_recovery": 3, "vo2m": 93, "training_type": [10, 21, 42] }
+    ],
+    "specific": [
+        { "distance": 1000, "repeat_session_start": 3, "repeat_session_end": 5, "session_recovery": 2, "training_type": [10, 21] },
+        { "distance": 1500, "repeat_session_start": 2, "repeat_session_end": 3, "session_recovery": 2, "training_type": [10, 21] },
+        { "distance": 2000, "repeat_session_start": 3, "repeat_session_end": 4, "session_recovery": 2, "training_type": [10, 21, 42] },
+        { "distance": 3000, "repeat_session_start": 2, "repeat_session_end": 3, "session_recovery": 2.5, "training_type": [10, 21, 42] },
+        { "distance": 4000, "repeat_session_start": 2, "repeat_session_end": 3, "session_recovery": 2.5, "training_type": [21, 42] },
+        { "distance": 5000, "repeat_session_start": 1, "repeat_session_end": 2, "session_recovery": 2.5, "training_type": [21, 42] }
+    ],
+    "long_training": [
+        { "duration": 75, "frequence": 75, "repeat_split": 0, "duration_split": 0, "frequence_split": 0, "recovery_split": 0, "training_type": [10] },
+        { "duration": 80, "frequence": 75, "repeat_split": 0, "duration_split": 0, "frequence_split": 0, "recovery_split": 0, "training_type": [10] },
+        { "duration": 80, "frequence": 75, "repeat_split": 3, "duration_split": 8, "frequence_split": 85, "recovery_split": 2, "training_type": [10, 21] },
+        { "duration": 80, "frequence": 75, "repeat_split": 2, "duration_split": 10, "frequence_split": 95, "recovery_split": 2, "training_type": [10, 21] },
+        { "duration": 90, "frequence": 75, "repeat_split": 0, "duration_split": 0, "frequence_split": 0, "recovery_split": 0, "training_type": [21, 42] },
+        { "duration": 90, "frequence": 75, "repeat_split": 3, "duration_split": 12, "frequence_split": 85, "recovery_split": 2, "training_type": [21, 42] },
+        { "duration": 100, "frequence": 75, "repeat_split": 0, "duration_split": 0, "frequence_split": 0, "recovery_split": 0, "training_type": [21, 42] },
+        { "duration": 110, "frequence": 75, "repeat_split": 3, "duration_split": 15, "frequence_split": 80, "recovery_split": 3, "training_type": [21, 42] },
+        { "duration": 120, "frequence": 75, "repeat_split": 2, "duration_split": 20, "frequence_split": 85, "recovery_split": 2, "training_type": [42] }
+    ],
+    "endurance": [
+        { "duration": 45, "frequence": 65, "training_type": [10, 21, 42] },
+        { "duration": 60, "frequence": 65, "training_type": [10, 21, 42] }
+    ]
+}
