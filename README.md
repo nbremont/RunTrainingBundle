@@ -1,2 +1,2 @@
-# RunTrainingBundle
+# RunTrainingBundle [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/nbremont/RunTrainingBundle/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/nbremont/RunTrainingBundle/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/nbremont/RunTrainingBundle/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/nbremont/RunTrainingBundle/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/nbremont/RunTrainingBundle/badges/build.png?b=master)](https://scrutinizer-ci.com/g/nbremont/RunTrainingBundle/build-status/master)
 Generate running plan
