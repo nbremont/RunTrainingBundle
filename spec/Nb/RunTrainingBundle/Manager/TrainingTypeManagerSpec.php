@@ -3,7 +3,6 @@
 namespace spec\Nb\RunTrainingBundle\Manager;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 
 class TrainingTypeManagerSpec extends ObjectBehavior
 {

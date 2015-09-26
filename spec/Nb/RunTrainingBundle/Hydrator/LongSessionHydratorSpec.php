@@ -3,7 +3,6 @@
 namespace spec\Nb\RunTrainingBundle\Hydrator;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
 
 class LongSessionHydratorSpec extends ObjectBehavior
 {

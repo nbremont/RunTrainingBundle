@@ -3,14 +3,9 @@
 namespace spec\Nb\RunTrainingBundle\Manager;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-
 use Nb\RunTrainingBundle\Hydrator\HydratorFactory;
-use Nb\RunTrainingBundle\Hydrator\SpecificSessionHydrator;
 use Nb\RunTrainingBundle\Hydrator\EnduranceSessionHydrator;
-use Nb\RunTrainingBundle\Entity\SpecificSession;
 use Nb\RunTrainingBundle\Entity\EnduranceSession;
-use Nb\RunTrainingBundle\Manager\SessionManager;
 
 class SessionManagerSpec extends ObjectBehavior
 {

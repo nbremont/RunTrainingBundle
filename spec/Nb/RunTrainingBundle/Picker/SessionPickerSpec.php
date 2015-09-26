@@ -3,8 +3,6 @@
 namespace spec\Nb\RunTrainingBundle\Picker;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-
 use Nb\RunTrainingBundle\Manager\SessionManager;
 use Nb\RunTrainingBundle\Entity\EnduranceSession;
 

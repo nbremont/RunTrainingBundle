@@ -3,8 +3,6 @@
 namespace spec\Nb\RunTrainingBundle\Builder;
 
 use PhpSpec\ObjectBehavior;
-use Prophecy\Argument;
-
 use Nb\RunTrainingBundle\Entity\AbstractSession;
 use Nb\RunTrainingBundle\Entity\Week;
 use Nb\RunTrainingBundle\Provider\WeekProvider;
