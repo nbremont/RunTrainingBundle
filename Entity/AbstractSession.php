@@ -2,6 +2,11 @@
 
 namespace Nb\RunTrainingBundle\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\MappedSuperclass
+ */
 abstract class AbstractSession
 {
     /**
@@ -9,5 +14,5 @@ abstract class AbstractSession
      *
      * @return boolean
      */
-    public function hasTrainingType($trainingType) {}
+    protected function hasTrainingType($trainingType) {}
 }

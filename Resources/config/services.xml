@@ -32,6 +32,9 @@
             <argument type="service" id="nb_run_training.builder.week" />
             <argument type="service" id="nb_run_training.manager.training_type" />
         </service>
+        <service id="nb_twig_session_extension" class="Nb\RunTrainingBundle\Twig\SessionExtension" public="false">
+            <tag name="twig.extension" />
+        </service>
     </services>
 </container>
 
